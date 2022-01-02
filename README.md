@@ -20,7 +20,7 @@ Además el comando te minificará el código que hayas hecho.
 
 ## Deploy.
 
-El deploy de este proyecto lo puedes ver en el siguiente [enlace](https://www.google.com/).
+El deploy de este proyecto lo puedes ver en el siguiente [enlace](https://tender-stonebraker-d1e7e9.netlify.app/).
 
 ## Comentarios Finales.
 

@@ -1,3 +1,4 @@
+// Componente que renderiza la pagina resultante del boton flotante
 import React from 'react'
 import './Menu.scss'
 

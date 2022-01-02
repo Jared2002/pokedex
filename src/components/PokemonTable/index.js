@@ -1,3 +1,4 @@
+//Componente que renderiza la parte superior de la tabla de pokemons, ademas recibe la propiedad "props.children", para renderizar dentro de tbody a sus hijos.
 import React from 'react'
 import './PokemonTable.scss'
 

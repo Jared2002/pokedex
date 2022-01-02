@@ -1,3 +1,4 @@
+//Componente encargado de "intercambiar" de páginas al pulsar el boton
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './Modal.scss';

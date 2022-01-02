@@ -2,6 +2,8 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
+//Decidí utilizar una pequeña configuración para este proyecto con Webpack
+
 module.exports = {
     entry: './src/index.js',
     output: {
@@ -10,9 +12,11 @@ module.exports = {
     },
     mode: 'development',
     resolve: {
+        //los archivos que webpack va a leer
         extensions: ['.js', '.jsx'],
     },
     module: {
+        //reglas para trabajar con Webpack
         rules: [
             {
                 test: /\.(js|jsx)$/,
@@ -39,6 +43,7 @@ module.exports = {
             }
         ]
     },
+    //sección de plugins
     plugins: [
         new HtmlWebpackPlugin({
             template: './public/index.html',

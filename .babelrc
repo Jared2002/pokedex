@@ -1,3 +1,4 @@
+//Encragado de configurar el entorno donde trabajará babel 
 {
     "presets": [
         "@babel/preset-react"

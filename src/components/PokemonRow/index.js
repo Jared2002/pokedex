@@ -1,8 +1,11 @@
+//Componente que utiliza los 150 llamados a la API y renderiza una fila de la tabla por cada llamado
 import React from 'react';
 
-function PokemonRow({ id, image, pokemonName, height, weight }) {
+function PokemonRow({ id, image, pokemonName, height, weight, setSelected }) {
     return (
-        <tr>
+        <tr onClick={()=>{
+            setSelected(id)
+        }}>
             <td><p>{id}</p></td>
             <td>
                 <div>

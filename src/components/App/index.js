@@ -12,6 +12,7 @@ function App() {
     const [search, setSearch] = useState('')
     const [modal, setModal] = useState(false)
     let listOfPokemon = [];
+    let searchedPokemons = [];
 
     const getData = async (id) =>{
         const API = 'https://pokeapi.co/api/v2/pokemon/' + id.toString();
@@ -24,11 +25,7 @@ function App() {
         }
         await setList(listOfPokemon);
     }
-
-    getPokemons();
     
-    let searchedPokemons = [];
-
     if (!search.length >= 1) {
         searchedPokemons = list;
     } else {
@@ -39,9 +36,13 @@ function App() {
         });
     }
 
+    React.useEffect(() =>{
+        getPokemons();
+    }, [])
+
     return (
         <div>
-            <h1>Pokedex</h1>
+            <h1 className='principal-title'>Pokedex</h1>
             <PokemonSearch 
                 searchValue={search}
                 setSearchValue={setSearch}

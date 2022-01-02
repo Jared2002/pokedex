@@ -1,14 +1,15 @@
 import React from 'react'
+import './PokemonTable.scss'
 
 function PokemonTable(props) {
     return (
         <table>
             <thead>
                 <tr>
-                    <th>Id</th>
-                    <th>Pokemon</th>
-                    <th>Height</th>
-                    <th>Weigth</th>
+                    <th><p>Id</p></th>
+                    <th><p>Pokemon</p></th>
+                    <th><p>Height</p></th>
+                    <th><p>Weigth</p></th>
                 </tr>
             </thead>
             <tbody>

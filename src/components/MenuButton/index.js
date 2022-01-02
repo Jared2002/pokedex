@@ -1,5 +1,5 @@
 import React from 'react';
-import './MenuButton.sass'
+import './MenuButton.scss'
 
 function MenuButton(props) {
   const onClickButton = () => {

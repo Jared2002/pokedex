@@ -1,7 +1,8 @@
+import React from 'react';
 import ReactDOM from 'react-dom';
-import './Modal.sass'
+import './Modal.scss';
 
-function Modal({ children }) {
+function Modal ({ children }) {
     return ReactDOM.createPortal(
         <div className='modalBackground'>
             {children}
@@ -10,4 +11,4 @@ function Modal({ children }) {
     )
 }
 
-export default Modal
+export default Modal;
